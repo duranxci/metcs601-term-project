@@ -1,0 +1,139 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: ivory;
+}
+
+#page-title {
+  font-size: 3em;
+  margin: 8px;
+}
+
+.banner {
+  font-family: 'Press Start 2P';
+  display: flex;
+  align-items: center;
+  background-color: magenta;
+  min-width: 100vh;
+}
+
+/* define a blinking effect for when hovering*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img:hover {
+  animation: blink 0.2s infinite;
+  /* filter: invert(100%); */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  background-color: gray;
+  margin: 0;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100px;
+  padding: 5px;
+  color: white;
+}
+
+nav a:hover {
+  animation: blink 0.2s infinite;
+}
+
+main {
+  padding: 1em;
+}
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  text-align: right;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: 'Press Start 2P';
+  color: magenta;
+}
+
+footer a:hover {
+  animation: blink 0.2s infinite;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid magenta;
+  color: magenta;
+  background-color: ivory;
+  border-radius: 5px;
+}
+
+/* 3D effect on hover */
+button:hover {
+  animation: blink 0.2s infinite;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav li a {
+    width: 100%;
+  }
+
+  .banner {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav li a {
+    width: 100%;
+  }
+
+  .banner {
+    justify-content: left;
+  }
+
+  #page-title {
+    display: none;
+  }
+}
