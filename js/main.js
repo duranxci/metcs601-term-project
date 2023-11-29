@@ -18,6 +18,9 @@ function getHeader(logo) {
           <li>
             <a href="./about.html">About</a>
           </li>
+          <li>
+            <a href="./resume.html" target="_blank">Resume</a>
+          </li>
         </ul>
       </nav>
     </header>
