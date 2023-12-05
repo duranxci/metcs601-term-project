@@ -1,16 +1,16 @@
-function getHeader(logo) {
+function getHeader(logo, pageName) {
   return `
       <header>
       <div class="banner">
         <a href="./index.html">
           <img src="./assets/images/${logo}" alt="A game controller joystick" />
         </a>
-        <h1 id="page-title">About</h1>
+        <h1 id="page-title">${pageName}</h1>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="./index.html">Home</a>
+            <a href="./home.html">Home</a>
           </li>
           <li>
             <a href="./portfolio.html">Portfolio</a>

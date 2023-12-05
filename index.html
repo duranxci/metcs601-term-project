@@ -3,30 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Jonathan Duran Login</title>
+    <link rel="stylesheet" href="./css/login.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js"></script>
-    <title>Jonathan Duran</title>
+    <script src="./js/login.mjs" type="module"></script>
   </head>
   <body>
-    <script>
-      document.write(getHeader('gamepad1.png'));
-    </script>
-    <main>
-      <p>
-        Hello there. Wellcome to my website. My name is Jonathan Duran and I'm an aspiring game
-        developer. Hope you enjoy!
-      </p>
-      <button onclick="window.location.href='./about.html'">Beging Browsing</button>
-    </main>
+    <form id="loginForm" action="./home.html">
+      <label for="playerName">Player Name:</label>
+      <input type="text" id="playerName" name="playerName" />
+
+      <label for="secreteCode">Secret Code:</label>
+      <input type="password" id="secreteCode" name="secreteCode" />
+
+      <button id="submitButton" type="submit" disabled>Insert Coin to Play</button>
+    </form>
   </body>
 </html>
