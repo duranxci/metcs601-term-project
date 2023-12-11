@@ -11,7 +11,6 @@ f.playerName.addEventListener('input', function () {
 
 f.secreteCode.addEventListener('input', function () {
   secreteCodeIsValid = this.value.length > 4;
-  console.log(this.value.length);
   validateLoginForm();
 });
 
