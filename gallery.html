@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js"
+      integrity="sha512-jUvo4wLmasBQ4VBRwG9qkfOP/6GkSepADybOv52QFmqEYQlPx8ihGINjxQkiaH+ygvkI0XI2dMSvPs2BcFL5Zg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/vue.js" type="module"></script>
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <title>My Gallery</title>
+  </head>
+  <body>
+    <h1>My Fav Champions</h1>
+    <p>Hover over to see my favorive skin for each champ</p>
+    <div class="image-container" id="app">
+      <img
+        v-for="(image, index) in images"
+        :key="index"
+        v-bind:src="getImage(index)"
+        alt="Image"
+        @mouseover="changeImage(index)"
+        @mouseout="resetImage"
+        @click="openLink(index)"
+      />
+    </div>
+  </body>
+</html>

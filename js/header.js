@@ -13,10 +13,13 @@ function getHeader(logo, pageName) {
             <a href="./home.html">Home</a>
           </li>
           <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
             <a href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a href="./about.html">About</a>
+            <a href="./gallery.html" target="_blank">Gallery</a>
           </li>
           <li>
             <a href="./resume.html" target="_blank">Resume</a>
